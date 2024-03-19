@@ -1,0 +1,152 @@
+    html,body{
+        margin: 0;  
+        padding: 0;
+    }
+    :root{
+        --btn-coloer: rgba(247, 235, 235,.2);
+        --bg-color: #C7DBE6;
+        --bg-div: #0B2545;
+    }
+    .ved{
+        height: 110vh;
+        object-fit: cover;
+    }
+    .btn-sch{
+        background-color: var(--btn-coloer);
+        color: white;
+        transition: scale .5s;
+        
+    }
+    .btn-sch:hover{
+        background-color: white;
+        color: rgb(29, 29, 29);
+        scale: 1.1;
+    }
+    .nav-link:hover{
+        background-color: rgba(247, 235, 235,.1);
+    }
+    .title-header{
+        position: relative;
+        width: 85%;
+        top: 10vh;
+    }
+    .btn-arrow-down{
+        cursor: pointer;
+    }
+
+    .btn-go{
+        bottom: 15%;
+        right: 5%;
+        background-color: var(--bg-div);
+        color: white;
+        transition: scale .3s;
+    }
+    .btn-go:hover{
+        scale: 1.1;
+        background-color: rgba(0,0,0,.1);
+        color: var(--bg-div);
+    }
+
+    .owl-dots-custom {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: -25px;
+    }
+
+    .owl-dots-custom .owl-dot {
+        width: 10px; /* Adjust dot size */
+        height: 10px; /* Adjust dot size */
+        margin: 0 10px; /* Adjust spacing between dots */
+        background-color: black; /* Change dot color */
+        border-radius: 50%;
+        opacity: .2;
+        cursor: auto;
+        
+        transition: background-color,width 0.3s ease; /* Add transition effect */
+    }
+    .owl-dots-custom .owl-dot.active{
+        background-color: white;
+        opacity: .9;
+        width: 25px;
+    }
+.logo{
+
+    width: 150px;
+    height: 100px;
+}
+.about{
+    background-color: var(--bg-color);
+}
+.img-back{
+    position: relative;
+    top: 90%;
+    right: 12%;
+    width: 45%;
+    transition: height,top 1s;
+}
+.img-front{
+    position: relative;
+    /* top: 15%;
+    height: 25vh; */
+    transition: height,top .5s;
+}
+.apear{
+    height: 85vh;
+}
+.div-img{
+    height: 120vh;
+}
+
+.side-div{
+    top: 50px;
+    height: 120vh;
+    
+}
+.small-div{
+    width: 45%;
+}
+.bg-small-div-color{
+    background-color: var(--bg-div);
+}
+.icon-desc{
+    width: 10%;
+}
+.desc{
+    line-height: 1.5;
+    color: var(--bg-div);
+    width: 90%;
+}
+.head{
+    color: var(--bg-div);
+}
+.btn-more{
+    background-color: #496DDB;
+    font-size: larger;
+    color: white;
+    transition: scale .3s;
+}
+.btn-more:hover{
+    scale: 1.1;
+    background-color: white;
+    color: var(--bg-div);
+}
+.btn-career{
+    font-size: larger;
+    background-color: var(--bg-div);
+    transition: scale .3s;
+    color: white;
+}
+.btn-career:hover{
+    scale: 1.1;
+    background-color: #f1f6f9;
+    color: var(--bg-div);
+}
+.p-div{
+    color:#D1D9E0 ;
+}
+
+.num{
+    color: #ECA7B3;
+}
