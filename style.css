@@ -1,193 +1,266 @@
-    html,body{
-        margin: 0;  
-        padding: 0;
+html,body{
+    margin: 0;  
+    padding: 0;
+}
+:root{
+    --btn-coloer: rgba(247, 235, 235,.2);
+    --bg-color: #C7DBE6;
+    --bg-div: #0B2545;
+}
+.ved{
+    height: 110vh;
+    object-fit: cover;
+}
+.btn-sch{
+    background-color: var(--btn-coloer);
+    color: white;
+    transition: scale .5s;
+    
+}
+.btn-sch:hover{
+    background-color: white;
+    color: rgb(29, 29, 29);
+    scale: 1.1;
+}
+.nav-link:hover{
+    background-color: rgba(247, 235, 235,.1);
+}
+.title-header{
+    position: relative;
+    width: 85%;
+    top: 10vh;
+}
+.dimension-header{
+    font-size: 5rem;
+}
+@media screen and (max-width: 1200px) {
+   .ved{
+        height: 150vh;
     }
-    :root{
-        --btn-coloer: rgba(247, 235, 235,.2);
-        --bg-color: #C7DBE6;
-        --bg-div: #0B2545;
-    }
-    .ved{
-        height: 110vh;
-        object-fit: cover;
-    }
-    .btn-sch{
-        background-color: var(--btn-coloer);
-        color: white;
-        transition: scale .5s;
-        
-    }
-    .btn-sch:hover{
-        background-color: white;
-        color: rgb(29, 29, 29);
-        scale: 1.1;
-    }
-    .nav-link:hover{
-        background-color: rgba(247, 235, 235,.1);
-    }
+    
+}
+@media screen and (max-width: 992px) {
     .title-header{
-        position: relative;
-        width: 85%;
-        top: 10vh;
+        width: 100%;
     }
     .dimension-header{
-        font-size: 5rem;
+        font-size: 3rem;
     }
-    @media screen and (max-width: 1200px) {
-       .ved{
-            height: 150vh;
-        }
-        
+    .ved{
+        height: 120vh;
     }
-    @media screen and (max-width: 992px) {
-        .title-header{
-            width: 100%;
-        }
-        .dimension-header{
-            font-size: 3rem;
-        }
-        .ved{
-            height: 120vh;
-        }
-        .nav-responsive{
-            display: contents;
-        }
-        
-        
+    .nav-responsive{
+        display: contents;
     }
-    @media screen and (max-width: 768px) {
-        .ved{
-            height: 150vh;
-        }
-        .dimension-header{
-            font-size: 1.5rem;
-        }
-        
+    
+    
+}
+@media screen and (max-width: 768px) {
+    .ved{
+        height: 150vh;
     }
-    .btn-arrow-down{
-        cursor: pointer;
+    .dimension-header{
+        font-size: 1.5rem;
     }
-    #sccroll{
-        font-size: smaller;
-    }
-    .owl-carousel{
-        width: 100%;
-        height: 50px;
-    }
+    
+}
+.btn-arrow-down{
+    cursor: pointer;
+}
+#sccroll{
+    font-size: smaller;
+}
+.owl-carousel{
+    width: 100%;
+    height: 50px;
+}
 
-    .btn-go{
-        bottom: 15%;
-        right: 5%;
-        background-color: var(--bg-div);
-        color: white;
-        transition: scale .3s;
-    }
-    .btn-go:hover{
-        scale: 1.1;
-        background-color: rgba(0,0,0,.1);
-        color: var(--bg-div);
-    }
+.btn-go{
+    bottom: 15%;
+    right: 5%;
+    background-color: var(--bg-div);
+    color: white;
+    transition: scale .3s;
+}
+.btn-go:hover{
+    scale: 1.1;
+    background-color: rgba(0,0,0,.1);
+    color: var(--bg-div);
+}
 
-    .owl-dots-custom {
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        bottom: -25px;
-    }
+.owl-dots-custom {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: -25px;
+}
 
-    .owl-dots-custom .owl-dot {
-        width: 10px; /* Adjust dot size */
-        height: 10px; /* Adjust dot size */
-        margin: 0 10px; /* Adjust spacing between dots */
-        background-color: black; /* Change dot color */
-        border-radius: 50%;
-        opacity: .2;
-        cursor: auto;
-        
-        transition: background-color,width 0.3s ease; /* Add transition effect */
-    }
-    .owl-dots-custom .owl-dot.active{
-        background-color: white;
-        opacity: .9;
-        width: 25px;
-    }
+.owl-dots-custom .owl-dot {
+    width: 10px; /* Adjust dot size */
+    height: 10px; /* Adjust dot size */
+    margin: 0 10px; /* Adjust spacing between dots */
+    background-color: black; /* Change dot color */
+    border-radius: 50%;
+    opacity: .2;
+    cursor: auto;
+    
+    transition: background-color,width 0.3s ease; /* Add transition effect */
+}
+.owl-dots-custom .owl-dot.active{
+    background-color: white;
+    opacity: .9;
+    width: 25px;
+}
 .logo{
 
-    width: 150px;
-    height: 100px;
+width: 150px;
+height: 100px;
 }
 .about{
-    background-color: var(--bg-color);
-}
-.img-back{
-    position: relative;
-    top: 90%;
-    right: 12%;
-    width: 45%;
-    transition: height,top 1s;
+background-color: var(--bg-color);
 }
 .img-front{
     position: relative;
-    /* top: 15%;
-    height: 25vh; */
-    transition: height,top .5s;
+    top: 15%;
+height: 45vh;
+transition: height,top .5s ;
+
+}
+@keyframes img{
+    0%{
+        height: 45vh;
+        top: 15%;
+    }
+    100%{
+     height: 85vh;   
+     top: -15%;
+    }
+}
+@keyframes img-back{
+    0%{
+        height: 85vh;   
+        top: -15%;
+    }
+    100%{
+        height: 45vh;
+        top: 15%;
+    }
+}
+.img-back{
+position: relative;
+top: 45vh;
+right: 12%;
+width: 45%;
+transition: height,top 1s;
+}
+@keyframes imgg{
+    0%{   
+        top: 45vh;
+    }
+    100%{ 
+     top: 12vh;
+    }
+}
+@keyframes imgg-back{
+    0%{
+        top: 12vh;
+    }
+    100%{
+        top: 45vh;
+    }
 }
 .apear{
-    height: 85vh;
+height: 85vh;
 }
 .div-img{
-    height: 120vh;
+height: 120vh;
 }
 
 .side-div{
-    top: 50px;
-    height: 120vh;
-    
+top: 100px;
+height: 120vh;
+
+}
+.right-side{
+    position: relative;
+    top: 5vh;
+}
+@keyframes rightside{
+    0%{
+        top: 5vh;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+@keyframes rightside-back{
+    0%{
+        top: 0vh;
+    }
+    100%{
+        top: 5vh;
+    }
+}
+@keyframes side{
+    0%{
+        top: 100px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+@keyframes side-back{
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 100px;
+    }
 }
 .small-div{
-    width: 45%;
+width: 45%;
 }
 .bg-small-div-color{
-    background-color: var(--bg-div);
+background-color: var(--bg-div);
 }
 .icon-desc{
-    width: 10%;
+width: 10%;
 }
 .desc{
-    line-height: 1.5;
-    color: var(--bg-div);
-    width: 90%;
+line-height: 1.5;
+color: var(--bg-div);
+width: 90%;
 }
 .head{
-    color: var(--bg-div);
+color: var(--bg-div);
 }
 .btn-more{
-    background-color: #496DDB;
-    font-size: larger;
-    color: white;
-    transition: scale .3s;
+background-color: #496DDB;
+font-size: larger;
+color: white;
+transition: scale .3s;
 }
 .btn-more:hover{
-    scale: 1.1;
-    background-color: white;
-    color: var(--bg-div);
+scale: 1.1;
+background-color: white;
+color: var(--bg-div);
 }
 .btn-career{
-    font-size: larger;
-    background-color: var(--bg-div);
-    transition: scale .3s;
-    color: white;
+font-size: larger;
+background-color: var(--bg-div);
+transition: scale .3s;
+color: white;
 }
 .btn-career:hover{
-    scale: 1.1;
-    background-color: #f1f6f9;
-    color: var(--bg-div);
+scale: 1.1;
+background-color: #f1f6f9;
+color: var(--bg-div);
 }
 .p-div{
-    color:#D1D9E0 ;
+color:#D1D9E0 ;
 }
 
 .num{
-    color: #ECA7B3;
+color: #ECA7B3;
 }
